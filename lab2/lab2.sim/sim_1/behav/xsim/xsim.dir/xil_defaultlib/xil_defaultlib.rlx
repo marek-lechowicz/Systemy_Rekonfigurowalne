@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/mlech/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+C:/Users/mlech/lab2/lab2.srcs/sim_1/new/tb_advanced_logic_module.v,1646954153,verilog,,,,tb_advanced_logic_module,,,,,,,,
+C:/Users/mlech/lab2/lab2.srcs/sim_1/new/tb_licznik_modulo.v,1646942130,verilog,,,,tb_licznik_modulo,,,,,,,,
+C:/Users/mlech/lab2/lab2.srcs/sources_1/new/advanced_logic_module.v,1646952355,verilog,,C:/Users/mlech/lab2/lab2.srcs/sim_1/new/tb_advanced_logic_module.v,,advanced_logic_module,,,,,,,,
+C:/Users/mlech/lab2/lab2.srcs/sources_1/new/licznik_modulo.v,1646942126,verilog,,C:/Users/mlech/lab2/lab2.srcs/sim_1/new/tb_licznik_modulo.v,,licznik_modulo,,,,,,,,
