@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab3.srcs/sources_1/imports/SR/load_file.v" \
+"../../../../lab3.srcs/sources_1/imports/SR/maszyna_stanow.v" \
+"../../../../lab3.srcs/sources_1/imports/SR/save_file.v" \
+"../../../../lab3.srcs/sources_1/new/receiver.v" \
+"../../../../lab3.srcs/sources_1/new/save_received.v" \
+"../../../../lab3.srcs/sim_1/new/tb_maszyna_stanow.v" \
+"../../../../lab3.srcs/sim_1/new/tb_receiver.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
