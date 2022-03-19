@@ -1,0 +1,10 @@
+Errors occured: 
+
+Input: 0000010000 | Output: 0 | Expected: 1
+Input: 0000100000 | Output: 0 | Expected: 1
+Input: 0010000000 | Output: 0 | Expected: 1
+Input: 0010010000 | Output: 0 | Expected: 1
+Input: 0010100000 | Output: 0 | Expected: 1
+Input: 0100000000 | Output: 0 | Expected: 1
+Input: 0100010000 | Output: 0 | Expected: 1
+Input: 0100100000 | Output: 0 | Expected: 1

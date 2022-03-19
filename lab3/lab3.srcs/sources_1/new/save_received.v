@@ -37,7 +37,7 @@ module save_received
         begin
             data_to_save = data;
             file=$fopen("D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab3/save_received_data.txt","a");
-            $fwrite(file,"%d",data_to_save);
+            $fwrite(file,"%c",data_to_save);
             $fclose(file);
         end
         previous_received <= received;

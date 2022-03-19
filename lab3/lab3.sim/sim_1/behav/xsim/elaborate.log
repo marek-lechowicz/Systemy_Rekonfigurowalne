@@ -1,19 +1,15 @@
 Vivado Simulator v2021.2
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_receivermodule_behav xil_defaultlib.tb_receivermodule xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_or_gate_behav xil_defaultlib.tb_or_gate xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab3/lab3.srcs/sim_1/new/tb_receiver.v:52]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab3/lab3.srcs/sim_1/new/tb_receiver.v:60]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.load_file
-Compiling module xil_defaultlib.maszyna_stanow
-Compiling module xil_defaultlib.receiver
-Compiling module xil_defaultlib.save_received
-Compiling module xil_defaultlib.tb_receivermodule
+Compiling module xil_defaultlib.or_gate
+Compiling module xil_defaultlib.log_errors
+Compiling module xil_defaultlib.tb_or_gate
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_receivermodule_behav
+Built simulation snapshot tb_or_gate_behav

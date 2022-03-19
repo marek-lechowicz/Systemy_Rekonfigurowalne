@@ -33,7 +33,7 @@ localparam STATE_1 = 1'd1;
 
 reg state = STATE_0;
 reg [7:0]memory_data = 0;
-reg [2:0]received_cnt = 3'd7;
+reg [2:0]received_cnt = 3'd0;
 reg received_reg = 0;
 
 
@@ -53,16 +53,16 @@ begin
             end
             STATE_1:
             begin
-                if (received_cnt == 0)
+                if (received_cnt == 7)
                 begin
                     memory_data[received_cnt] <= rxd;
                     state <= STATE_0;
-                    received_cnt <= 3'd7;
+                    received_cnt <= 3'd0;
                     received_reg <= 1;
                 end else
                 begin
                     memory_data[received_cnt] <= rxd;
-                    received_cnt <= received_cnt - 1;
+                    received_cnt <= received_cnt + 1;
                 end
             end
         endcase
