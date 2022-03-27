@@ -60,7 +60,6 @@ ENTITY c_addsub_6 IS
   PORT (
     A : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     B : IN STD_LOGIC_VECTOR(20 DOWNTO 0);
-    CLK : IN STD_LOGIC;
     CE : IN STD_LOGIC;
     S : OUT STD_LOGIC_VECTOR(20 DOWNTO 0)
   );
@@ -119,8 +118,6 @@ ARCHITECTURE c_addsub_6_arch OF c_addsub_6 IS
   ATTRIBUTE X_INTERFACE_INFO OF S: SIGNAL IS "xilinx.com:signal:data:1.0 s_intf DATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF CE: SIGNAL IS "XIL_INTERFACENAME ce_intf, POLARITY ACTIVE_HIGH";
   ATTRIBUTE X_INTERFACE_INFO OF CE: SIGNAL IS "xilinx.com:signal:clockenable:1.0 ce_intf CE";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF s_intf:c_out_intf:sinit_intf:sset_intf:bypass_intf:c_in_intf:add_intf:b_intf:a_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF CLK: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_intf CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF B: SIGNAL IS "XIL_INTERFACENAME b_intf, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF B: SIGNAL IS "xilinx.com:signal:data:1.0 b_intf DATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF A: SIGNAL IS "XIL_INTERFACENAME a_intf, LAYERED_METADATA undef";
@@ -137,7 +134,7 @@ BEGIN
       C_CE_OVERRIDES_SCLR => 0,
       C_A_TYPE => 0,
       C_B_TYPE => 0,
-      C_LATENCY => 2,
+      C_LATENCY => 0,
       C_ADD_MODE => 0,
       C_B_CONSTANT => 0,
       C_B_VALUE => "000000000000000000000",
@@ -158,7 +155,7 @@ BEGIN
     PORT MAP (
       A => A,
       B => B,
-      CLK => CLK,
+      CLK => '0',
       ADD => '1',
       C_IN => '0',
       CE => CE,

@@ -35,12 +35,14 @@ wire [12+8:0]sum_out;
 always @(posedge clk)
 begin 
     if (rst == 1) acc_register <= 0;
-    if (rst == 0) acc_register <= sum_out;
+    else
+    begin 
+        if (ce == 1) acc_register <= sum_out;
+        if (ce == 0) acc_register <= acc_register;
+    end
 end 
 
 c_addsub_6 add_to_prev(
-    .CE(ce),
-    .CLK(clk),
     .A(A),
     .B(acc_register),
     .S(sum_out)

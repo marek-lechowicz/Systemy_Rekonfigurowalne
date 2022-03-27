@@ -17,3 +17,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/studia_zadania/SR/Systemy_Rekonf
 INFO: [VRFC 10-311] analyzing module tb_accumulator
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab4/lab4.srcs/sim_1/new/tb_matmul.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_matmul
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab4/lab4.gen/sources_1/ip/c_addsub_6/sim/c_addsub_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_6'

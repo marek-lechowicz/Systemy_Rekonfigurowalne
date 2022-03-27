@@ -56,7 +56,6 @@ COMPONENT c_addsub_6
   PORT (
     A : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     B : IN STD_LOGIC_VECTOR(20 DOWNTO 0);
-    CLK : IN STD_LOGIC;
     CE : IN STD_LOGIC;
     S : OUT STD_LOGIC_VECTOR(20 DOWNTO 0)
   );
@@ -71,7 +70,6 @@ your_instance_name : c_addsub_6
   PORT MAP (
     A => A,
     B => B,
-    CLK => CLK,
     CE => CE,
     S => S
   );
