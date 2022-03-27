@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab4.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" \
+"../../../../lab4.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" \
+"../../../../lab4.gen/sources_1/ip/c_addsub_1/sim/c_addsub_1.vhd" \
+"../../../../lab4.gen/sources_1/ip/c_addsub_2/sim/c_addsub_2.vhd" \
+"../../../../lab4.gen/sources_1/ip/c_addsub_3/sim/c_addsub_3.vhd" \
+"../../../../lab4.gen/sources_1/ip/c_addsub_4/sim/c_addsub_4.vhd" \
+"../../../../lab4.gen/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd" \
+"../../../../lab4.gen/sources_1/ip/mult_gen_2/sim/mult_gen_2.vhd" \
+"../../../../lab4.gen/sources_1/ip/c_addsub_5/sim/c_addsub_5.vhd" \
+"../../../../lab4.gen/sources_1/ip/mult_gen_3/sim/mult_gen_3.vhd" \
+"../../../../lab4.gen/sources_1/ip/c_addsub_7/sim/c_addsub_7.vhd" \
+"../../../../lab4.gen/sources_1/ip/c_addsub_6/sim/c_addsub_6.vhd" \
+
+# Do not sort compile order
+nosort
