@@ -2,9 +2,9 @@
 2020.2
 Oct 19 2021
 03:16:22
-D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1649071331,verilog,,D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_in.v,,dist_mem_gen_0,,,,,,,,
-D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
-D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,1649071091,verilog,,,,tb_hdmi,,,,,,,,
-D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_in.v,1649069355,verilog,,D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_out.v,,hdmi_in,,,,,,,,
-D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_out.v,1648454698,verilog,,D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,,hdmi_out,,,,,,,,
-D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,1649071195,verilog,,D:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,,vp,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1649071331,verilog,,D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_in.v,,dist_mem_gen_0,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,1649071091,verilog,,,,tb_hdmi,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_in.v,1650717058,verilog,,D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_out.v,,hdmi_in,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/tb_src/hdmi_out.v,1648454698,verilog,,D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,,hdmi_out,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v,1649071364,verilog,,D:/studia_zadania/Systemy_Rekonfigurowalne/lab5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v,,vp,,,,,,,,

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Mar 28 15:24:01 2022
+# Process ID: 91112
+# Current directory: /home/lsriw/SR/LechowiczMarek/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_clk_wiz_0_0_synth_1
+# Command line: vivado -log hdmi_vga_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_vga_clk_wiz_0_0.tcl
+# Log file: /home/lsriw/SR/LechowiczMarek/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_clk_wiz_0_0_synth_1/hdmi_vga_clk_wiz_0_0.vds
+# Journal file: /home/lsriw/SR/LechowiczMarek/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_clk_wiz_0_0_synth_1/vivado.jou
+# Running On: lsriw-koscielec, OS: Linux, CPU Frequency: 2800.000 MHz, CPU Physical cores: 24, Host memory: 67337 MB
+#-----------------------------------------------------------
+source hdmi_vga_clk_wiz_0_0.tcl -notrace

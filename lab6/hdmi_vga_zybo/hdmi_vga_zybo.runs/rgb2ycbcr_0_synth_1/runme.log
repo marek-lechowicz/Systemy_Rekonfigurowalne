@@ -1,0 +1,285 @@
+
+*** Running vivado
+    with args -log rgb2ycbcr_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2ycbcr_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source rgb2ycbcr_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1252.250 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/studia_zadania/SR/Systemy_Rekonfigurowalne/lab5/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/studia_zadania/SR/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.cache/ip 
+Command: synth_design -top rgb2ycbcr_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19472
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rgb2ycbcr_0' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/synth/rgb2ycbcr_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'rgb2ycbcr' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/rgb2ycbcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/mult_gen_0/synth/mult_gen_0.vhd:71]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 18 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 18 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 25 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_17' declared at 'd:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21010' bound to instance 'U0' of component 'mult_gen_v12_0_17' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/mult_gen_0/synth/mult_gen_0.vhd:120]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (6#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/mult_gen_0/synth/mult_gen_0.vhd:68]
+INFO: [Synth 8-6157] synthesizing module 'delay_module' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:43]
+INFO: [Synth 8-6157] synthesizing module 'single_delay' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_delay' (7#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_module' (8#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:43]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/c_addsub_0/synth/c_addsub_0.vhd:68]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 1 - type: integer 
+	Parameter C_A_WIDTH bound to: 9 - type: integer 
+	Parameter C_B_WIDTH bound to: 9 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 9 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'd:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/c_addsub_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/c_addsub_0/synth/c_addsub_0.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_0' (16#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/c_addsub_0/synth/c_addsub_0.vhd:68]
+INFO: [Synth 8-6157] synthesizing module 'delay_module__parameterized0' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:43]
+INFO: [Synth 8-6157] synthesizing module 'single_delay__parameterized0' [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_delay__parameterized0' (16#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_module__parameterized0' (16#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/delay_module.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2ycbcr' (17#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/src/rgb2ycbcr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2ycbcr_0' (18#1) [d:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0_1/synth/rgb2ycbcr_0.v:58]
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEA1 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEA2 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB1 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB2 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEC in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECARRYIN in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECTRL in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEALUMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEINMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEM in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEP in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRA in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRB in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRC in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALLCARRYIN in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRCTRL in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALUMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRINMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRM in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRP in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_IN in module c_addsub_v12_0_14_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module c_addsub_v12_0_14_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BYPASS in module c_addsub_v12_0_14_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module c_addsub_v12_0_14_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_addsub_v12_0_14_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_addsub_v12_0_14_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[47] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[46] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[45] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[44] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[43] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[42] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[41] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[40] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[39] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[38] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[37] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[36] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[35] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[34] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[33] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[32] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[31] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[30] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[29] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[28] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[27] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[26] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[25] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[24] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[23] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[22] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[21] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[20] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[19] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[18] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[17] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[16] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[15] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[14] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[13] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[12] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[11] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[10] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[9] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[8] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[7] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[6] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[5] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[4] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[3] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[2] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[1] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[0] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[24] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[23] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[22] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[21] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[20] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[19] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[18] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[17] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[16] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[15] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[14] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[13] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[12] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[11] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[10] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[9] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[8] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[7] in module dsp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1252.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.runs/rgb2ycbcr_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/studia_zadania/Systemy_Rekonfigurowalne/lab6/hdmi_vga_zybo/hdmi_vga_zybo.runs/rgb2ycbcr_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_r1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_b1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_b2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_b3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_g1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_g2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_g3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_r2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mul_r3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_r1_g1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_Cb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_Cr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_Y. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_r1_g1_b1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_r2_g2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_r2_g2_b2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_r3_g3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/add_r3_g3_b3. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1252.250 ; gain = 0.000
+---------------------------------------------------------------------------------
