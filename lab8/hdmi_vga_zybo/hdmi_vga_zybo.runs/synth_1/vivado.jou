@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon May  9 15:20:00 2022
+# Process ID: 225023
+# Current directory: /home/lsriw/SR/LechowiczMarek/lab7/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1
+# Command line: vivado -log hdmi_vga_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_vga_wrapper.tcl
+# Log file: /home/lsriw/SR/LechowiczMarek/lab7/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.vds
+# Journal file: /home/lsriw/SR/LechowiczMarek/lab7/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/vivado.jou
+# Running On: lsriw-koscielec, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 24, Host memory: 67337 MB
+#-----------------------------------------------------------
+source hdmi_vga_wrapper.tcl -notrace
