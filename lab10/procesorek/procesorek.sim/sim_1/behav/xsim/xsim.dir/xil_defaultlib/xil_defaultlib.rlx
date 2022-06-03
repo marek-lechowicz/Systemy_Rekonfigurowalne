@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.sim/sim_1/behav/xsim/glbl.v,1634335544,verilog,,,,glbl,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.srcs/sim_1/new/tb_processor.v,1653411176,verilog,,,,tb_processor,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.srcs/sources_1/imports/Downloads/d_mem.v,1653403540,verilog,,D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.srcs/sources_1/imports/Downloads/i_mem.v,,d_mem,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.srcs/sources_1/imports/Downloads/i_mem.v,1654293949,verilog,,D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.srcs/sources_1/new/processor.v,,i_mem,,,,,,,,
+D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.srcs/sources_1/new/processor.v,1654275585,verilog,,D:/studia_zadania/Systemy_Rekonfigurowalne/lab10/procesorek/procesorek.srcs/sim_1/new/tb_processor.v,,processor,,,,,,,,

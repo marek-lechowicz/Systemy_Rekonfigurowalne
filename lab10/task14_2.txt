@@ -1,0 +1,16 @@
+// zad 1
+movi R4, 0x1
+movi R0, 0x0
+movi R3, 0x0
+addi R0, R0, 0x1
+and R3, R0, 0x32 //liczba zależy od taktowania procka
+jnz R3, 0x3
+movi R4, 0x0
+
+//	zad2
+movi R5, 0x2
+andi R0, R4, 0x1
+andi R1, R4, 0x1
+add R2, R0, R1
+andi R2, R2, 0x1
+jnz R2, 0x1

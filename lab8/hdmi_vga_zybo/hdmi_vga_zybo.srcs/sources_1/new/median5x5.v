@@ -36,7 +36,7 @@ output v_sync_out,
 output de_out
 );
 
-reg [3:0]dpack;
+//reg [3:0]dpack;
 
 // rejestry dla kolejnych pixeli z maski
 reg [3:0] p11;
@@ -80,25 +80,24 @@ delayLinieBRAM_WP long_delay(
 .dout(long_delay_out), 
 .h_size(H_SIZE-5));
 
-reg [4:0] sum = 0; 
+reg [4:0]sum = 0; 
 reg context_valid = 1'b0;
 
 always @(posedge clk)
 begin
-    dpack <= {pixel_in, de_in, h_sync_in, v_sync_in};
+//    dpack <= {pixel_in, de_in, h_sync_in, v_sync_in};
     
-    p11 <= dpack; p12 <= p11; p13 <= p12; p14 <= p13; p15 <= p14;
-    p21 <= long_delay_out[15:12]; p22 <= p12; p23 <= p22; p24 <= p23; p25 <= p24;
-    p31 <= long_delay_out[11:8]; p32 <= p12; p33 <= p32; p34 <= p33; p35 <= p34;
-    p41 <= long_delay_out[7:4]; p42 <= p12; p43 <= p42; p44 <= p43; p45 <= p44;
-    p51 <= long_delay_out[3:0]; p52 <= p12; p53 <= p52; p54 <= p53; p55 <= p54;
+    p11 <= {pixel_in, de_in, h_sync_in, v_sync_in}; p12 <= p11; p13 <= p12; p14 <= p13; p15 <= p14;
+    p21 <= long_delay_out[15:12]; p22 <= p21; p23 <= p22; p24 <= p23; p25 <= p24;
+    p31 <= long_delay_out[11:8]; p32 <= p31; p33 <= p32; p34 <= p33; p35 <= p34;
+    p41 <= long_delay_out[7:4]; p42 <= p41; p43 <= p42; p44 <= p43; p45 <= p44;
+    p51 <= long_delay_out[3:0]; p52 <= p51; p53 <= p52; p54 <= p53; p55 <= p54;
     
     long_delay_in <= {p15,p25,p35,p45}; 
     
-    sum <= p11 + p12 + p13 + p14 + p15 + p21 + p22 + p23 + p24 + p25 + p31 + p32 + p33 + p34 + p35 + p41 + p42 + p43 + p44 + p45 + p51 + p52 + p53 + p54 + p55;
+    sum = p11[3] + p12[3] + p13[3] + p14[3] + p15[3] + p21[3] + p22[3] + p23[3] + p24[3] + p25[3] + p31[3] + p32[3] + p33[3] + p34[3] + p35[3] + p41[3] + p42[3] + p43[3] + p44[3] + p45[3] + p51[3] + p52[3] + p53[3] + p54[3] + p55[3];
     context_valid <= p11[2] & p12[2] & p13[2] & p14[2] & p15[2] & p21[2] & p22[2] & p23[2] & p24[2] & p25[2] & p31[2] & p32[2] & p33[2] & p34[2] & p35[2] & p41[2] & p42[2] & p43[2] & p44[2] & p45[2] & p51[2] & p52[2] & p53[2] & p54[2] & p55[2];
 end
-
 
 assign de_out = p33[2];
 assign h_sync_out = p33[1];

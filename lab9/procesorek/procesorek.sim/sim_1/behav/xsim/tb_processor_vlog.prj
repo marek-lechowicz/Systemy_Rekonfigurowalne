@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../procesorek.srcs/sources_1/imports/Downloads/d_mem.v" \
+"../../../../procesorek.srcs/sources_1/imports/Downloads/i_mem.v" \
+"../../../../procesorek.srcs/sources_1/new/processor.v" \
+"../../../../procesorek.srcs/sim_1/new/tb_processor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -21,7 +21,7 @@
 
 
 module vp(
-    input [2:0]sw,
+    input [3:0]sw,
     input clk,
     input de_in,
     input h_sync_in,
@@ -39,11 +39,11 @@ module vp(
 localparam HIGH = 720;
 localparam WIDTH = 1280;
 
-wire de_mux[7:0];
-wire hsync_mux[7:0];
-wire vsync_mux[7:0];
+wire de_mux[15:0];
+wire hsync_mux[15:0];
+wire vsync_mux[15:0];
     
-wire [23:0]rgb_mux[7:0];
+wire [23:0]rgb_mux[15:0];
 assign rgb_mux[0] = pixel_in;
 
 // sync delay only for LUT application
@@ -88,6 +88,7 @@ wire [7:0]Cb = rgb_mux[1][15:8];
 wire [7:0]Cr = rgb_mux[1][7:0];
 assign bin = (Cb >= Ta && Cb <= Tb && Cr >= Tc && Cr <= Td ) ? 8'd255 : 0;
 assign rgb_mux[2] = {bin, bin, bin};
+//assign rgb_mux[2] = {rgb_mux[1][23:16], rgb_mux[1][23:16], rgb_mux[1][23:16]};
 assign de_mux[2] = de_mux[1];
 assign hsync_mux[2] = hsync_mux[1];
 assign vsync_mux[2] = vsync_mux[1];
@@ -198,7 +199,7 @@ vis_bounding_box #(
 
 median5x5
 #(
-    .H_SIZE(83)
+    .H_SIZE(1650)
 ) median_filter
 (
     .clk(clk),
@@ -211,6 +212,40 @@ median5x5
     .h_sync_out(hsync_mux[6]),
     .v_sync_out(vsync_mux[6]),
     .pixel_out(rgb_mux[6])
+);
+
+morf_open
+#(
+    .H_SIZE(83)
+) opening
+(
+    .clk(clk),
+    .pixel_in(rgb_mux[2][0]), 
+    .h_sync_in(hsync_mux[2]),
+    .v_sync_in(vsync_mux[2]),
+    .de_in(de_mux[2]),
+    
+    .de_out(de_mux[7]),
+    .h_sync_out(hsync_mux[7]),
+    .v_sync_out(vsync_mux[7]),
+    .pixel_out(rgb_mux[7])
+);
+
+mask_filter
+#(
+    .H_SIZE(83)
+) mask3x3
+(
+    .clk(clk),
+    .pixel_in(rgb_mux[1]), 
+    .h_sync_in(hsync_mux[1]),
+    .v_sync_in(vsync_mux[1]),
+    .de_in(de_mux[1]),
+    
+    .de_out(de_mux[8]),
+    .h_sync_out(hsync_mux[8]),
+    .v_sync_out(vsync_mux[8]),
+    .pixel_out(rgb_mux[8])
 );
 
 assign pixel_out = rgb_mux[sw];  

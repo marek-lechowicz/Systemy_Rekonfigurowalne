@@ -5,14 +5,22 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ce' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.gen/sources_1/ip/rgb2ycbcr_0/src/rgb2ycbcr.v:155]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ce' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:106]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:107]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ce' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:165]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:166]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ce' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:107]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ce' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:166]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/vp.v:167]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:81]
 WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 11 for port 'addra' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/Downloads/delayLinieBRAM_WP.v:69]
 WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'dina' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/Downloads/delayLinieBRAM_WP.v:70]
 WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'douta' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/imports/Downloads/delayLinieBRAM_WP.v:71]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/erosion.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/dilatation.v:81]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'din' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mask_filter.v:64]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'dout' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mask_filter.v:65]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mask_filter.v:66]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'din' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mask_filter.v:76]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'dout' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mask_filter.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 13 for port 'h_size' [D:/studia_zadania/Systemy_Rekonfigurowalne/lab8/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/new/mask_filter.v:78]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -87,7 +95,11 @@ Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="zyn...
 Compiling module xil_defaultlib.delayLineBRAM
 Compiling module xil_defaultlib.delayLinieBRAM_WP
-Compiling module xil_defaultlib.median5x5(H_SIZE=74)
+Compiling module xil_defaultlib.median5x5(H_SIZE=1650)
+Compiling module xil_defaultlib.erosion
+Compiling module xil_defaultlib.dilatation
+Compiling module xil_defaultlib.morf_open
+Compiling module xil_defaultlib.mask_filter
 Compiling module xil_defaultlib.vp
 Compiling module xil_defaultlib.hdmi_out
 Compiling module xil_defaultlib.tb_hdmi
