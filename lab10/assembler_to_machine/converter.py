@@ -132,7 +132,7 @@ def mc_to_verilog(machine_code, verilog_filepath): # doesn't work if jump comman
     verilog_hex = str()
     for i, command in enumerate(commands_list):
         verilog += f"assign program[{i}]=32'b{command};\n"
-        verilog_hex += f"assign program[{i+1}]=32'b{hex(int(command, 2))};\n"
+        verilog_hex += f"assign program[{i}]=32'b{hex(int(command, 2))};\n"
     
     with open(verilog_filepath, 'w') as f:
         f.write(verilog)
@@ -140,5 +140,5 @@ def mc_to_verilog(machine_code, verilog_filepath): # doesn't work if jump comman
     return verilog
 
 
-machine_code = translate_assembly_program('task14_2.asm', 'task14_2.mc')
-print(mc_to_verilog(machine_code, 'task14_2.txt'))
+machine_code = translate_assembly_program('task13_5.asm', 'task13_5.mc')
+print(mc_to_verilog(machine_code, 'task13_5.txt'))
